@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Liste des utilisateurs",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor.",
+    "link": "/users/list.html"
+  },
+  {
+    "title": "Liste des formations",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor.",
+    "link": "/formations/list.html"
+  }
+]
