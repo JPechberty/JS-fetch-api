@@ -12,16 +12,14 @@
         <div class="col-md-8 offset-md-2">
             <h1>Detail de la formation</h1>
             <hr/>
-            <a href="../index.html" class="btn btn-outline-danger" role="button">Retour</a>
-            <hr/>
             <div class="alert alert-info d-flex justify-content-center" id="info-alert" role="alert">
                 <div class="spinner-border text-info" role="status"></div>
             </div>
-            <div class="alert alert-danger d-flex justify-content-center" id="error-alert" role="alert">
+            <div class="alert alert-danger d-none d-flex justify-content-center" id="error-alert" role="alert">
                 Une erreur est survenue
             </div>
-            <div class="card" id="formation-card">
-                <div class="card-header">Titre de la formation</div>
+            <div class="card d-none" id="formation-card">
+                <div class="card-header h5">Titre de la formation</div>
                 <div class="card-body">
                     <dl class="row">
                         <dt class="col-sm-4" >Niveau</dt>
@@ -38,7 +36,9 @@
                         <dd class="col-sm-8" id="formation-description"></dd>
                     </dl>
                 </div>
-                <div class="card-footer"></div>
+                <div class="card-footer d-flex justify-content-center">
+                    <a href="list.html" class="btn btn-outline-danger" role="button">Retour</a>
+                </div>
             </div>
         </div>
     </div>
