@@ -11,9 +11,13 @@ services:
       - ./logs/website:/var/log/apache2 # apache_logs
   api:
     container_name: api
-    image: nours313/franken-formations-api:latest
+    build: ./docker/api
+    tty: true
+    volumes:
+      - ./docker/api/vhosts:/etc/apache2/sites-enabled
+      - ./api:/var/www
+      - ./logs/api:/var/log/apache2 # apache_logs
     ports:
-      - "8001:443"
-      - "8001:443/udp"
+      - "8001:80"
 volumes:
   logs:

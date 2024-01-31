@@ -3,11 +3,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>JS Fetch API - Detail de la formation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<h1>Hello, world!</h1>
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-md-8 offset-md-2">
+            <h1>Detail de la formation</h1>
+            <hr/>
+            <a href="../index.html" class="btn btn-outline-danger" role="button">Retour</a>
+            <hr/>
+            <div class="alert alert-info d-flex justify-content-center" id="info-alert" role="alert">
+                <div class="spinner-border text-info" role="status"></div>
+            </div>
+            <div class="alert alert-danger d-flex justify-content-center" id="error-alert" role="alert">
+                Une erreur est survenue
+            </div>
+            <div class="card" id="formation-card">
+                <div class="card-header">Titre de la formation</div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4" >Niveau</dt>
+                        <dd class="col-sm-8" id="formation-niveau"></dd>
+                        <dt class="col-sm-4" >Durée</dt>
+                        <dd class="col-sm-8" id="formation-duree"></dd>
+                        <dt class="col-sm-4" >Déroulement</dt>
+                        <dd class="col-sm-8" id="formation-deroulement"></dd>
+                        <dt class="col-sm-4" >Stage</dt>
+                        <dd class="col-sm-8" id="formation-stage"></dd>
+                        <dt class="col-sm-4" >Campus</dt>
+                        <dd class="col-sm-8" id="formation-campus"></dd>
+                        <dt class="col-sm-4" >Description</dt>
+                        <dd class="col-sm-8" id="formation-description"></dd>
+                    </dl>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script defer src="../js/formation-detail.js"></script>
 </body>
 </html>
