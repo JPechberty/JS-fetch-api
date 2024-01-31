@@ -11,11 +11,11 @@ services:
       - ./logs/website:/var/log/apache2 # apache_logs
   api:
     container_name: api
-    build: ./docker/api
+    image: nours313/api-formations:apache2
     tty: true
     volumes:
-      - ./docker/api/vhosts:/etc/apache2/sites-enabled
-      - ./api:/var/www
+      #- ./docker/api/vhosts:/etc/apache2/sites-enabled
+      #- ./api:/var/www
       - ./logs/api:/var/log/apache2 # apache_logs
     ports:
       - "8001:80"
